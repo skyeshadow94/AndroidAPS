@@ -181,4 +181,49 @@
         <item>Negative only</item>
     </string-array>
 
+
+    <string name="meal_assistant_open">AI Meal Assistant</string>
+    <string name="meal_assistant_title">AI Meal Assistant (beta)</string>
+    <string name="meal_assistant_disclaimer">Estimate only. Always verify before dosing.</string>
+    <string name="meal_assistant_provider">LLM provider</string>
+    <string name="meal_assistant_barcode_hint">Barcode (optional)</string>
+    <string name="meal_assistant_lookup_barcode">Lookup barcode nutrition</string>
+    <string name="meal_assistant_barcode_lookup_idle">Barcode lookup not run.</string>
+    <string name="meal_assistant_barcode_lookup_loading">Looking up barcode…</string>
+    <string name="meal_assistant_barcode_lookup_success">Barcode matched: %1$s (%2$.1f g carbs/100g)</string>
+    <string name="meal_assistant_barcode_lookup_not_found">No nutrition data found for barcode.</string>
+    <string name="meal_assistant_barcode_lookup_error">Barcode lookup failed, continuing without it.</string>
+    <string name="meal_assistant_carbs_per_100g">Carbs per 100g</string>
+    <string name="meal_assistant_portion_grams">Portion size in grams</string>
+    <string name="meal_assistant_calculate">Calculate estimate</string>
+    <string name="meal_assistant_use_estimate">Use estimate</string>
+    <string name="meal_assistant_invalid_input">Enter valid carbs/100g and portion grams.</string>
+    <string name="meal_assistant_result_format">Estimated carbs: %1$d g (±%2$d g), confidence: %3$d%%</string>
+    <string name="meal_assistant_warning_doublecheck">Large verification difference detected. Double-check label and portion.</string>
+    <string name="meal_assistant_warning_ok">Verification check passed.</string>
+
+
+    <string name="meal_assistant_endpoint_hint">LLM endpoint (chat/completions URL)</string>
+    <string name="meal_assistant_model_hint">Model (e.g. gpt-4o-mini)</string>
+    <string name="meal_assistant_api_key_hint">API key</string>
+    <string name="meal_assistant_processing">Processing with LLM…</string>
+    <string name="meal_assistant_processing_deterministic">Running barcode lookup + image analysis…</string>
+    <string name="meal_assistant_warning_network_fallback">Network/LLM failed. Using local estimate fallback.</string>
+    <string name="meal_assistant_warning_local_only">Local estimate mode. Add endpoint/key for cloud verification.</string>
+    <string name="meal_assistant_warning_needs_images">Add a portion image or grams for reliable estimate.</string>
+    <string name="meal_assistant_warning_low_confidence">Estimate confidence too low to use directly. Please adjust manually.</string>
+
+
+    <string name="meal_assistant_select_label_image">Label image</string>
+    <string name="meal_assistant_select_portion_image">Portion image</string>
+    <string name="meal_assistant_no_images_selected">No images selected</string>
+    <string name="meal_assistant_images_status">Label: %1$s | Portion: %2$s</string>
+    <string name="meal_assistant_selected">selected</string>
+    <string name="meal_assistant_missing_portion">Tip: add a portion image for better estimation.</string>
+
+    <string name="meal_assistant_not_selected">not selected</string>
+
+    <string name="meal_assistant_capture_label_image">Capture label</string>
+    <string name="meal_assistant_capture_portion_image">Capture portion</string>
+
 </resources>

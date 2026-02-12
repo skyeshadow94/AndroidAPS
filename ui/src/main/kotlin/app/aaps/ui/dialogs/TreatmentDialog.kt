@@ -33,6 +33,7 @@ import app.aaps.core.ui.toast.ToastUtils
 import app.aaps.core.utils.HtmlHelper
 import app.aaps.ui.R
 import app.aaps.ui.databinding.DialogTreatmentBinding
+import app.aaps.ui.dialogs.MealAssistantDialog
 import com.google.common.base.Joiner
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.kotlin.plusAssign
@@ -127,6 +128,14 @@ class TreatmentDialog : DialogFragmentWithDate() {
         binding.recordOnlyLayout.visibility = View.GONE
         binding.insulinLabel.labelFor = binding.insulin.editTextId
         binding.carbsLabel.labelFor = binding.carbs.editTextId
+
+        parentFragmentManager.setFragmentResultListener(MealAssistantDialog.REQUEST_KEY, viewLifecycleOwner) { _, bundle ->
+            val carbs = bundle.getInt(MealAssistantDialog.RESULT_CARBS, 0)
+            if (carbs > 0) binding.carbs.value = carbs.toDouble()
+        }
+        binding.openMealAssistant.setOnClickListener {
+            MealAssistantDialog().show(parentFragmentManager, "MealAssistantDialog")
+        }
     }
 
     override fun onDestroyView() {
