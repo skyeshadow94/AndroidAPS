@@ -1,4 +1,4 @@
-# AI Meal Assistant (Beta) – README
+# AI Meal Assistant (v1) – README
 
 This document explains the current AI Meal Assistant feature added to AndroidAPS.
 
@@ -68,7 +68,7 @@ This helps debugging and traceability.
 
 ---
 
-## Known Limitations (Current Beta)
+## Known Limitations (Current v1)
 
 - Barcode path currently expects manual barcode entry and online lookup.
 - Label OCR and portion-size inference quality depends on image quality and model behavior.
